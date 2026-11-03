@@ -6,6 +6,8 @@ date: "2026-04-01"
 lang: en
 toc: true
 toc-depth: 3
+description: Historical research dated April 1, 2026 on agent connectivity, credentials
+  and infrastructure, with original references.
 ---
 
 ::: {.text-end .text-muted}

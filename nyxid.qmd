@@ -1,9 +1,11 @@
 ---
-title: "NyxID"
-subtitle: "Open-Source Agent Connectivity Gateway"
+title: NyxID
+subtitle: Open-Source Agent Connectivity Gateway
 lang: en
 toc: true
 toc-depth: 2
+description: Archived technical overview of NyxID, preserving original technical claims.
+  See the current product page for current positioning and integrations.
 ---
 
 ::: {.lang-switch}
