@@ -6,7 +6,6 @@ date: "2026-04-01"
 lang: zh
 toc: true
 toc-depth: 3
-description: 发表于 2026 年 4 月 1 日的 Agent 连接、凭证与基础设施历史研究，保留原始引用。
 ---
 
 ::: {.text-end .text-muted}
