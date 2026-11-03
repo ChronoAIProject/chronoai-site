@@ -3,8 +3,6 @@ title: "One-Person Company"
 page-layout: article
 lang: en
 toc: false
-description: ChronoAI’s organizational perspective on independent delivery, AI and
-  coordination costs.
 ---
 
 ::: {.lang-switch}

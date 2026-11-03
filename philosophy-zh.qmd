@@ -3,7 +3,6 @@ title: "一人公司"
 page-layout: article
 lang: zh
 toc: false
-description: ChronoAI 关于独立交付、AI 与协作成本的组织观点。
 ---
 
 ::: {.lang-switch}

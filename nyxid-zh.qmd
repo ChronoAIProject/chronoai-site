@@ -1,10 +1,9 @@
 ---
-title: NyxID
-subtitle: 开源 Agent Connectivity Gateway
+title: "NyxID"
+subtitle: "开源 Agent Connectivity Gateway"
 lang: zh
 toc: true
 toc-depth: 2
-description: NyxID 历史技术概览，保留原始技术说明。当前产品定位与集成信息请参阅对应产品页面。
 ---
 
 ::: {.lang-switch}

@@ -1,11 +1,9 @@
 ---
-title: Ornn
-subtitle: AI Skill Platform
+title: "Ornn"
+subtitle: "AI Skill Platform"
 lang: en
 toc: true
 toc-depth: 2
-description: Archived technical overview of Ornn, preserving original technical claims.
-  See the current product page for current positioning and integrations.
 ---
 
 ::: {.lang-switch}

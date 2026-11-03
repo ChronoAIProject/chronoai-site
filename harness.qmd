@@ -3,8 +3,6 @@ title: "Order, Not Tools: Why Agent Harnesses Are a Category Error"
 page-layout: article
 lang: en
 toc: false
-description: An essay on governance and order in agent workflows; retained as an organizational
-  perspective.
 ---
 
 ::: {.lang-switch}

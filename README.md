@@ -1,36 +1,16 @@
-# ChronoAI site / ChronoAI 官网
+# Chrono AI Site
 
-保留 Quarto/QMD 内容站，并接入已确认的双语首页。支持本地评审和独立 GitHub Pages 验收站。
+Company insights, product thesis, and research — published at [chronoaiproject.github.io/chronoai-site](https://chronoaiproject.github.io/chronoai-site/).
 
-A Quarto/QMD content site with the approved bilingual landing page, supporting local review and a separate GitHub Pages acceptance site.
+Built with [Quarto](https://quarto.org). Deployed via GitHub Pages.
 
-```sh
-python3 -m venv .tools/venv
-.tools/venv/bin/pip install -r requirements.txt
-# Install Quarto, or set QUARTO_BIN. See docs/implementation.md.
-.tools/venv/bin/python scripts/build.py --preview
-.tools/venv/bin/python tests/verify_site.py _preview
-python3 scripts/serve.py --directory _preview --port 8768
+## Local preview
+
+```bash
+quarto preview
 ```
 
-预览入口：[English](http://127.0.0.1:8768/chronoai-site/) · [中文](http://127.0.0.1:8768/chronoai-site/zh/)。公开地址在 `site-config.json` 集中管理；默认沿用既有 GitHub Pages 地址，并非已确认的最终域名。
+## Content
 
-Preview links above use the configured subpath. `site-config.json` centralizes the public origin and base path; the existing GitHub Pages address is a default, not a final domain decision.
-
-正式静态包使用 `.tools/venv/bin/python scripts/build.py`，输出 `_site/`。必须通过此入口构建，而非直接 `quarto render`，以包含稳定语言 URL、metadata、Markdown、sitemap、llms 与兼容入口。GitHub workflow 使用同一入口。
-
-Build the public package with `.tools/venv/bin/python scripts/build.py` into `_site/`. Use this entry point instead of plain `quarto render` so every representation and locale comes from the same publication manifest. The workflow uses this same entry point.
-
-个人仓库 `aelf-hzz780/chronoai-site` 的发布始终生成验收包。手动运行 `Deploy Quarto site to GitHub Pages` 时，选择待验收的功能分支；工作流会按 `https://aelf-hzz780.github.io/chronoai-site/` 构建、验证并发布 `_preview/`，所有正式 HTML 页面保留 `noindex,nofollow`。Pages Source 必须为 GitHub Actions，`github-pages` environment 必须允许所选分支。无需为验收合并 main，也不绑定正式官网域名。
-
-Deployments from the personal repository, `aelf-hzz780/chronoai-site`, always produce an acceptance package. Run `Deploy Quarto site to GitHub Pages` manually and select the feature branch to review. The workflow builds, verifies and deploys `_preview/` at `https://aelf-hzz780.github.io/chronoai-site/`, retaining `noindex,nofollow` on every canonical HTML page. Set the Pages source to GitHub Actions and allow the selected branch in the `github-pages` environment. Acceptance does not require merging main or assigning the production domain.
-
-个人仓库的当前验收分支 `feature/approved-home-bilingual-seo` push 后会自动更新验收站，其他功能分支需手动运行。官方仓库仅允许 main 部署；push main 或手动运行 main 均沿用 `site-config.json` 构建、验证并发布正式 `_site/`，不会进入个人验收逻辑。
-
-Pushes to `feature/approved-home-bilingual-seo` in the personal repository update the acceptance site automatically; other feature branches require a manual run. The official repository deploys only main. Both pushes to main and manual runs on main use `site-config.json` to build, verify and publish the public `_site/`, without entering the personal acceptance path.
-
-手动发布或验收分支 push 会替换当前仓库的 Pages 内容。验收结束可在个人仓库的 Pages 设置中取消发布。`noindex` 不是访问控制；GitHub Pages 不执行生成的 `_headers` 文件，不能依靠它为 Markdown 或其他文件设置响应头。
-
-A manual deployment or an acceptance-branch push replaces the current repository's Pages content. Unpublish the personal repository's Pages site when acceptance ends. `noindex` is not access control; GitHub Pages does not apply the generated `_headers` file, so it cannot supply indexing headers for Markdown or other files.
-
-[实施、验证与发布边界 / Implementation, verification and hosting limits](docs/implementation.md)
+- **NyxID** — Product overview and getting started
+- **Research** — The AI Agent Connectivity Crisis (EN/中文)

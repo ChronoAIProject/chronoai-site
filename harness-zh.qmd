@@ -3,7 +3,6 @@ title: "秩序, 不是工具: 为什么 Agent Harness 的定义是一个类别�
 page-layout: article
 lang: zh
 toc: false
-description: 探讨 Agent 工作流中治理与秩序的观点文章，保留原有论述。
 ---
 
 ::: {.lang-switch}
